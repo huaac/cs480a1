@@ -5,4 +5,4 @@
 #include <unistd.h>
 #include <string>
 
-void BotAction();
+void* BotAction(void* id_num);
