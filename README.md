@@ -6,7 +6,7 @@ Alice Hua and Brianna Garcia
 
 **Class Accounts:** 
 * Brianna: cssc3122 
-* Alice: 
+* Alice:  cssc3124
 
 ## Project Description
 This project implements multi threads of chatbots to asynchronously
