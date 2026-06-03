@@ -1,4 +1,10 @@
 #include "bots.hpp"
+#include <iostream>
+#include <fstream>
+#include <pthread.h>
+#include <semaphore.h>
+#include <unistd.h>
+#include <string>
 
 sem_t FLAG;
 pthread_mutex_t LOCK = PTHREAD_MUTEX_INITIALIZER;
