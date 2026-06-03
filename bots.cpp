@@ -69,8 +69,8 @@ int main()
     //create 7 threads
     for( int i=0; i < total_thread; i++)
     {
-        std::cout << "Creating thread, in main(): " << i << std::endl;
-        ids[i] = i;
+        std::cout << "Creating thread, in main(): " << (i + 1) << std::endl;
+        ids[i] = i + 1;
 
         pthread_create(
             &threads[i],    //where thread id stored
