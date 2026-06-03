@@ -6,7 +6,7 @@
 
 # Class Accounts:
 # Brianna: cssc3122
-# Alice:
+# Account that is used Alice:cssc3124
 ###########################################################
 
 

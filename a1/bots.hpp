@@ -5,7 +5,7 @@
 * Alice Hua and Brianna Garcia
 * Class Accounts:
 * Brianna: cssc3122
-* Alice: cssc3124
+* Account that is used Alice: cssc3124
  */
 
 #include <pthread.h>
