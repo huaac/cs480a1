@@ -54,25 +54,21 @@ void* BotAction(void* id_num)
 
 }
 
-int main()
+void WritePID()
 {
-    //write pID(process ID) in quote
     std::ofstream file("QUOTE.txt");
 
     pid_t pid = getpid();
     file << "Process ID: " << pid << "\r\n";
 
     file.close();
+}
 
-    //create semaphore FLAG for threads to manage access
-    sem_init(&FLAG, 0,1);
-
-
+void Create7Threads()
+{
     pthread_t threads[total_thread]; // stores thread id/handles to know which thread to wait for
     int ids[total_thread]; //stores id number i at thread number i
 
-
-    //create 7 threads
     for( int i=0; i < total_thread; i++)
     {
         std::cout << "Creating thread, in main(): " << (i + 1) << std::endl;
@@ -91,6 +87,19 @@ int main()
     {
         pthread_join(threads[i], nullptr);
     }
+}
+
+int main()
+{
+    //write pID(process ID) in quote
+    WritePID();
+
+    //create semaphore FLAG for threads to manage access
+    sem_init(&FLAG, 0,1);
+
+
+    //create 7 threads and complete chatting
+    Create7Threads();
 
     //destroy semaphore
     sem_destroy(&FLAG);
