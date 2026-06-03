@@ -38,7 +38,7 @@ void* BotAction(void* id_num)
 
         //open QUOTE and write to end of file
         std::ofstream file1("QUOTE.txt", std::ios::app);
-        file1 << "THREAD ID: " << id << quote << "\r\n";
+        file1 << "THREAD ID " << id << ": " <<quote << "\r\n";
 
         //write to console
         pthread_mutex_lock(&LOCK); //makes it so that threads dont write on same line
@@ -98,7 +98,7 @@ int main()
     sem_init(&FLAG, 0,1);
 
 
-    //create 7 threads and complete chatting
+    //create 7 threads and complete chat
     Create7Threads();
 
     //destroy semaphore
