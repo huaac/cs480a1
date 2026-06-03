@@ -1,3 +1,12 @@
+/*
+* bots.cpp
+* CS480, Summer 2026
+* Programming Assignment #1
+* Alice Hua and Brianna Garcia
+* Class Accounts:
+* Brianna: cssc3122
+* Alice: cssc3124
+ */
 #include "bots.hpp"
 #include <iostream>
 #include <fstream>
